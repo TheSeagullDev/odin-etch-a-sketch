@@ -19,9 +19,6 @@ button {
     flex-wrap: wrap;
     width: 480px;
     height: 480px;
-}
-
-.grid {
     border: 1px solid black;
     box-sizing: border-box;
 }

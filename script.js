@@ -11,7 +11,9 @@ function generateGrid(size)
     }
     const grid = document.querySelectorAll(".grid");
     grid.forEach((square) => square.style.width = `${480/size}px`);
-    grid.forEach((square) => square.addEventListener("mouseover", () => square.classList.add("black")));
+    grid.forEach((square) => square.addEventListener("mouseover", () => {
+        square.style.backgroundColor = getRandomColor()
+    }));
 }
 generateGrid(size);
 
@@ -26,3 +28,11 @@ button.addEventListener("click", () => {
     }
     generateGrid(size);
 })
+
+function getRandomColor()
+{
+    const red = Math.floor(Math.random() * 256);
+    const green = Math.floor(Math.random() * 256);
+    const blue = Math.floor(Math.random() * 256);
+    return `rgb(${red}, ${green}, ${blue})`;
+}
