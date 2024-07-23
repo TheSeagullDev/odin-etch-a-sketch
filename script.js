@@ -10,7 +10,7 @@ function generateGrid(size)
         container.appendChild(gridSquare);
     }
     const grid = document.querySelectorAll(".grid");
-    grid.forEach((square) => square.style.width = `${480/size}px`);
+    grid.forEach((square) => square.style.width = `${960/size}px`);
     grid.forEach((square) => square.addEventListener("mouseover", () => {
         square.style.backgroundColor = getRandomColor()
     }));
