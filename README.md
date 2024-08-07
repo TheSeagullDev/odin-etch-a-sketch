@@ -1,1 +1,0 @@
-https://theseagulldev.github.io/odin-etch-a-sketch/
